@@ -21,6 +21,12 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       backgroundColor: mBackgroundColor,
       bottomNavigationBar: BottomNavigationTravel(),
+      body: Container(
+        child: ListView(
+          physics: ClampingScrollPhysics(),
+          children: [],
+        ),
+      ),
     );
   }
 }
